@@ -5,11 +5,13 @@ const closeList = document.getElementsByClassName('fa-times')[0]
 window.onscroll = () => {
         if(document.documentElement.scrollTop > 180){
             navigation.style.fontSize = '12px'
+            navigation.style.backgroundColor = 'rgb(0, 34, 88)'
             himabanner.style.width = '7rem'
             showList.style.fontSize = '1.5rem'
         }
         else{
             navigation.style.fontSize = ''
+            navigation.style.backgroundColor = ''
             himabanner.style.width = ''
             showList.style.fontSize = ''
         }

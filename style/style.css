@@ -50,10 +50,24 @@ header ul a{
     text-decoration: none;
     color: white;
     margin: 0 1rem;
+    position: relative;
 }
 header ul a li{
     display: inline-block;
     text-decoration: none;
+}
+header ul a li::after{
+    content: '';
+    left: 0;
+    top: 120%;
+    position: absolute;
+    width: 0%;
+    height: 2px;
+    transition: .4s;
+    background-color: rgb(255, 255, 255);
+}
+header ul a li:hover::after{
+    width: 100%;
 }
 .nav-navigation,
 nav form i {
@@ -64,8 +78,8 @@ nav{
     position: sticky;
     width: 100%;
     max-width: 1300px;
-    height: 7rem;
-    background-color: rgb(0, 34, 88);
+    height: 4rem;
+    background-color: rgb(21, 53, 105);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -100,6 +114,7 @@ nav .fa-times{
 .nav-navigation i{
     margin: 0 5px;
 }
+
 .nav-description{
     width: 300px;
     background-color: rgb(255, 255, 255);
