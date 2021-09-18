@@ -1,14 +1,14 @@
 @font-face {
     font-family:'Poppins-Regular';
-    src: url(../fonts/Poppins-Regular.ttf);
+    src: url(../resources/fonts/Poppins-Regular.ttf);
 }
 @font-face {
     font-family: 'Poppins-Bold';
-    src: url(../fonts/Poppins-Bold.ttf);
+    src: url(../resources/fonts/Poppins-Bold.ttf);
 }
 @font-face {
     font-family: 'Poppins-ExtraBold';
-    src: url(../fonts/Poppins-ExtraBold.ttf);
+    src: url(../resources/fonts/Poppins-ExtraBold.ttf);
 }
 *{
     box-sizing: border-box;
