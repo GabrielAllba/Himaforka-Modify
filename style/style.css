@@ -200,7 +200,7 @@ form .fa-search {
         padding:5px 0 0 0;
     }
     h2{
-        font-size: 1rem;
+        font-size: 2rem;
     }
     nav .fa-bars{
         display: flex;
@@ -373,7 +373,8 @@ main{
     min-height:700px;
     background-color: rgb(255, 166, 0);
 }
-#pengumuman h2{
+#pengumuman h2,
+#tentang h2{
     display: flex;
     height: 100px;
     align-items: center;
@@ -385,7 +386,7 @@ main{
     min-height: 600px;
     align-items: flex-start;
     justify-content: center;
-    background-color: #DDD;
+    background-color: rgb(255, 255, 255);
     flex-wrap: wrap;
     width: 100%;
     color: white;
@@ -456,4 +457,107 @@ div.more-info a::after{
 div.more-info a:hover::after{
     width: 100%;
     transition: .5s ease;
+}
+
+/* TENTANG */
+#tentang{
+    background-color: orange;
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    width: 100%;
+    min-height:400px;
+}
+.tentang-main{
+    display: flex;
+    height: 100%;
+    flex-wrap: wrap;
+}
+@media only screen and (max-width: 720px) {
+    .tentang-main{
+        flex-direction: column;
+    }
+    #tentang-dsc,
+    #tentand-agt{
+        width: 100%;
+    }
+}
+.tentang-desc{
+    display: flex;
+}
+#tentang-dsc h3,
+#tentang-dsc p{
+    padding: 0 1rem;
+}
+#tentang-dsc div{
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-end;
+}
+.tentang-desc h3{
+    font-size: 3rem;
+    letter-spacing: 2px;
+}
+#tentang-dsc{
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+    color: white;
+    background-color: rgb(21, 53, 105);
+}
+
+#tentang-agt{
+    justify-content: center;
+    width: 60%;
+    padding: 1rem;
+    background-color: white;
+}
+#tentang-dsc #masa-bakti{
+    margin: .5rem 0;
+}
+.list-anggota{
+    width: 25%;
+    min-height: 10rem;
+    margin: 1rem;
+    background-color: orange;
+    box-shadow: -8px 10px black;
+}
+.list-anggota-desk{
+    padding: 1rem;
+}
+.list-anggota .container-anggota{
+    max-width: 100%;
+}
+.list-anggota .container-anggota img{
+    width: 100%;
+    height: auto;
+}
+
+#tentang-dsc .more-info a{
+    padding-right: 1rem;
+    cursor: pointer;
+}
+
+@media only screen and (max-width: 720px) {
+    .tentang-main{
+        flex-direction: column;
+    }
+    #tentang-dsc,
+    #tentang-agt{
+        width: 100%;
+    }
+    .list-anggota-desk h4,
+    .list-anggota-desk p{
+    text-align: center;
+    }
+    .list-anggota{
+        width: 30%;
+    }
+    #tentang-agt{
+        flex-wrap: wrap;
+    }
+}
+footer{
+    height: 100vh;
+    width: 100%;
 }
