@@ -199,6 +199,9 @@ form .fa-search {
         display: none;
         padding:5px 0 0 0;
     }
+    h2{
+        font-size: 1rem;
+    }
     nav .fa-bars{
         display: flex;
         color: rgb(255, 255, 255);
@@ -230,19 +233,28 @@ form .fa-search {
     }
    
 }
+main{
+    display: flex;
+    flex-direction: column;
+}
 /* BERANDA*/
 #beranda{
     display: flex;
     max-width: 1300px;
     width: 100%;
     min-height:450px;
+    flex-wrap: wrap;
     background-color: rgb(255, 255, 255);
 }
 .content-beranda{
     width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
 }
 #beranda-description{
     background-color: rgb(21, 53, 105);
+    padding: 1rem;
 }
 #beranda-description h1{
     color: white;
@@ -353,3 +365,95 @@ form .fa-search {
 }
 
 /* PENGUMUMAN */
+#pengumuman{
+    display: flex;
+    flex-direction: column;
+    max-width: 1300px;
+    width: 100%;
+    min-height:700px;
+    background-color: rgb(255, 166, 0);
+}
+#pengumuman h2{
+    display: flex;
+    height: 100px;
+    align-items: center;
+    text-align: left;
+    padding-left: 1rem;
+}
+#pengumuman .main-announcement{
+    display: flex;
+    min-height: 600px;
+    align-items: flex-start;
+    justify-content: center;
+    background-color: #DDD;
+    flex-wrap: wrap;
+    width: 100%;
+    color: white;
+}
+.announcement-info{
+    color: black;
+    width: 300px;
+    height: 40rem;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+}
+.ann-inf-content{
+    display: flex;
+}
+.ann-img-container{
+    width: 100%;
+    max-height: 25rem;
+    overflow: hidden;
+}
+.ann-img-container img{
+    width: 100%;
+    height: 100%;
+}
+.ann-inf-main-content{
+    background-color: rgb(255, 255, 255);
+}
+.ann-inf-main-content h3,
+.ann-inf-main-content p{
+    padding: 1rem;
+}
+.ann-inf-main-content h3 a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+.ann-inf-header a{
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+}
+div.more-info{
+    background-color:rgb(21, 53, 105);
+    color: white;
+    width: 100%;
+    position: relative;
+}
+div.more-info a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+div.more-info a p,
+div.more-info a i{
+    padding-right: 1rem;
+    z-index: 2;
+}
+div.more-info a::after{
+    content: '';
+    width: 0;
+    top: 0;
+    left: 0;
+    position: absolute;
+    height: 100%;
+    background-color: orange;
+    transition: .5s ease;
+}
+div.more-info a:hover::after{
+    width: 100%;
+    transition: .5s ease;
+}
