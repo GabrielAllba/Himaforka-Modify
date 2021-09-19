@@ -87,12 +87,13 @@ nav{
     width: 100%;
     max-width: 1300px;
     height: 4rem;
-    background-color: rgb(21, 53, 105);
+    background-color: rgb(0, 34, 88);
     display: flex;
     justify-content: space-around;
     align-items: center;
     transition: .3s;
     flex-wrap: wrap;
+    z-index: 100;
 }
 nav .fa-bars,
 nav .fa-times{
@@ -192,7 +193,7 @@ form .fa-search {
         justify-content: center;
         align-items: flex-start;
         overflow: hidden;
-        height: 3.2rem;
+        height: 3.5rem;
     }
     nav form{
         display: none;
@@ -211,7 +212,7 @@ form .fa-search {
         flex-direction: column;
     }
     .nav-container img{
-        padding: 5px 10px;
+        padding: 5px 0;
     }
     .nav-navigation{
         width: 100%;
@@ -229,12 +230,6 @@ form .fa-search {
     }
    
 }
-main{
-    height: 200vh;
-    width: 100%;
-    max-width: 1300px;
-}
-
 /* BERANDA*/
 #beranda{
     display: flex;
@@ -279,6 +274,7 @@ main{
 #beranda-description p{
     color: white;
     padding: 0 1rem;
+    text-align: justify;
 }
 #beranda-description div:hover{
     border: 1px solid grey;
@@ -288,9 +284,11 @@ main{
     transform: translate(20%,-30%);
     transition: .4s;
 }
+
 #vid-youtube{
     width: 50%;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
 }
@@ -310,16 +308,48 @@ main{
         height: 50%;
         margin: 1rem;
     }
-    #beranda-description p{
-        text-align: center;
-    }
     #beranda-description{
         display: flex;
         flex-direction: column;
         align-items: center;
     }
+    #beranda-description p {
+        color: white;
+        padding: 0;
+        text-align: center;
+        max-width: 90%;
+    }
+    #beranda #beranda-description h1{
+        padding: 0;
+        text-align: center;
+        margin: 1rem 0;
+    }
     #beranda-description div{
         margin: 2rem;
     }
-    
 }
+.open-recruitment{
+    display: flex;
+    flex-direction: column;
+}
+.orc-title,
+.recruit-link{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin: .5rem 1rem;
+}
+.recruit-link{
+    padding: 1rem 0;
+}
+.recruit-link a{
+    display: flex;
+    text-decoration: none;
+    align-items: center;
+    color: rgb(0, 34, 88);
+}
+.recruit-link a h3{
+    margin-right: 6px;
+}
+
+/* PENGUMUMAN */
