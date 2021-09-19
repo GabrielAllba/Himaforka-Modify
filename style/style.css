@@ -181,6 +181,7 @@ form .fa-search {
     }
     nav form{
         display: none;
+        padding:5px 0 0 0;
     }
     nav .fa-bars{
         display: flex;
@@ -205,7 +206,12 @@ form .fa-search {
         justify-content: center;
         color: rgb(255, 255, 255);
     }
-    
+    .nav-description{
+        display: none !important; 
+    }
+    .nav-description {
+        text-align: center;
+    }
    
 }
 main{
