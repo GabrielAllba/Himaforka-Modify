@@ -4,7 +4,7 @@ const searchButton = document.getElementById('search-button')
 const showList = document.getElementsByClassName('fa-bars')[0]
 const closeList = document.getElementsByClassName('fa-times')[0]
 window.onscroll = () => {
-        if(document.documentElement.scrollTop > 60){
+        if(document.documentElement.scrollTop > 80){
             navigation.style.fontSize = '12px'
             himabanner.style.width = '7rem'
             showList.style.fontSize = '1.5rem'
