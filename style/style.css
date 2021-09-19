@@ -501,7 +501,9 @@ div.more-info a:hover::after{
 }
 #tentang-dsc{
     flex-direction: column;
+    justify-content: center;
     width: 40%;
+    padding: 1rem;
     position: relative;
     color: white;
     background-color: rgb(21, 53, 105);
