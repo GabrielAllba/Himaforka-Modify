@@ -190,10 +190,11 @@ form .fa-search {
 }
 @media only screen and (max-width: 720px){
     nav{
-        justify-content: center;
-        align-items: flex-start;
+        justify-content: flex-start;
+        align-items: center;
         overflow: hidden;
         height: 3.5rem;
+        flex-direction: column;
     }
     nav form{
         display: none;
