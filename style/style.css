@@ -19,6 +19,14 @@ html, body{
     font-family: 'Poppins-Regular';
     scroll-behavior: smooth;
 }
+h1{
+    font-family: 'Poppins-ExtraBold', sans-serif;
+    font-size: 4rem;
+}
+p{
+    font-family: 'Poppins-Regular';
+    font-size: .8rem;
+}
 body{
     display: flex;
     align-items: center;
@@ -111,26 +119,33 @@ nav .fa-times{
     justify-content: center;
     color: white;
 }
-.nav-navigation i{
+.nav-navigation a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.nav-navigation a i{
     margin: 0 5px;
 }
 
-.nav-description{
+.nav-description {
     width: 300px;
     background-color: rgb(255, 255, 255);
     left: 0;
     top: 85%;
-    color: black;
     display: none;
     position: absolute;
     border-radius: 10px;
     z-index: 2;
+    border: 1px solid rgb(180, 180, 180);
 }
 .nav-description a{
     padding: 1rem;
     width: 100%;
     border-radius: 10px;
     position: relative;
+    color: rgb(0, 0, 0);
 }
 .nav-description a::after{
     content: '';
@@ -218,4 +233,93 @@ main{
     height: 200vh;
     width: 100%;
     max-width: 1300px;
+}
+
+/* BERANDA*/
+#beranda{
+    display: flex;
+    max-width: 1300px;
+    width: 100%;
+    min-height:450px;
+    background-color: rgb(255, 255, 255);
+}
+.content-beranda{
+    width: 50%;
+}
+#beranda-description{
+    background-color: rgb(21, 53, 105);
+}
+#beranda-description h1{
+    color: white;
+    padding: 2rem 0 .5rem 1rem;
+}
+
+#beranda-description div{
+    margin: 3rem 0 .5rem 1rem;
+    border: 0px solid grey;
+    width: 7rem;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    transition: .4s;
+    cursor: pointer;
+}
+#beranda-description div p{
+    background-color: orange;
+    width: 100%;
+    padding: 1rem;
+    text-align: center;
+    transition: .4s;
+}
+#beranda-description div p a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+#beranda-description p{
+    color: white;
+    padding: 0 1rem;
+}
+#beranda-description div:hover{
+    border: 1px solid grey;
+    transition: .4s;
+}
+#beranda-description div:hover p{
+    transform: translate(20%,-30%);
+    transition: .4s;
+}
+#vid-youtube{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (max-width: 720px){
+    #beranda{
+        flex-direction: column;
+    }
+    h1{
+        font-size: 2rem ;
+    }
+    .content-beranda,
+    #vid-youtube{
+        width: 100%;
+    }
+    #vid-youtube iframe{
+        width: auto;
+        height: 50%;
+        margin: 1rem;
+    }
+    #beranda-description p{
+        text-align: center;
+    }
+    #beranda-description{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    #beranda-description div{
+        margin: 2rem;
+    }
+    
 }

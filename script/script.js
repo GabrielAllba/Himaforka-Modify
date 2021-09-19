@@ -1,9 +1,10 @@
 const navigation = document.getElementById('navigation')
 const himabanner = document.getElementById('hima-banner')
+const searchButton = document.getElementById('search-button')
 const showList = document.getElementsByClassName('fa-bars')[0]
 const closeList = document.getElementsByClassName('fa-times')[0]
 window.onscroll = () => {
-        if(document.documentElement.scrollTop > 180){
+        if(document.documentElement.scrollTop > 60){
             navigation.style.fontSize = '12px'
             navigation.style.backgroundColor = 'rgb(0, 34, 88)'
             himabanner.style.width = '7rem'
@@ -23,9 +24,11 @@ showList.addEventListener('click', () => {
 */
 function toggleList(){
     if(navigation.style.height == '3.2rem'){
-        navigation.style.height = '17rem'
+        navigation.style.height = '20rem'
+        searchButton.style.display = 'flex'
     }
     else{
         navigation.style.height = '3.2rem'
+        searchButton.style.display = ''
     }
 }
