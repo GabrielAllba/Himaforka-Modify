@@ -206,6 +206,7 @@ form .fa-search {
     }
     h2{
         font-size: 2rem;
+        text-align: center;
     }
     nav .fa-bars{
         display: flex;
@@ -238,6 +239,7 @@ form .fa-search {
     }
    
 }
+
 main{
     display: flex;
     flex-direction: column;
@@ -326,6 +328,7 @@ main{
     }
     h1{
         font-size: 2rem ;
+        text-align: center;
     }
     .content-beranda,
     #vid-youtube{
@@ -346,6 +349,7 @@ main{
         padding: 0;
         text-align: center;
         max-width: 90%;
+        text-align: center;
     }
     #beranda #beranda-description h1{
         padding: 0;
@@ -354,6 +358,7 @@ main{
     }
     #beranda-description div{
         margin: 2rem;
+        text-align: center;
     }
 }
 .open-recruitment{
@@ -883,5 +888,30 @@ footer .footer-socmed a[href*="linktr"]:hover{
     footer .footer-socmed a[href*="linktr"]{
         background-color: rgb(17, 230, 148);
         color: white;
+    }
+    p{
+        text-align: center;
+    }
+    h3{
+        text-align: center;
+    }
+    .recruit-link{
+        align-items: center;
+    }
+    #pengumuman h2, #tentang h2{
+        justify-content: center;
+    }
+    #ks-tittle{
+        display: flex;
+        justify-content: center;
+        padding-left: 0;
+    }
+    .ks-dsk h2{
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .ks-dsk h2, .ks-dsk p{
+        padding: 1rem;
     }
 }
