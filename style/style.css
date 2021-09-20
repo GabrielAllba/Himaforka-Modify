@@ -376,7 +376,7 @@ main{
     max-width: 1300px;
     width: 100%;
     min-height:700px;
-    background-color: #ffb700;
+    background-color: #ffffff;
 }
 #pengumuman h2,
 #tentang h2{
@@ -466,7 +466,7 @@ div.more-info a:hover::after{
 
 /* TENTANG */
 #tentang{
-    background-color: #ffb700;
+    background-color: #ffffff;
     display: flex;
     flex-direction: column;
     max-width: 1300px;
@@ -526,8 +526,8 @@ div.more-info a:hover::after{
     width: 25%;
     min-height: 10rem;
     margin: 1rem;
-    background-color: #ffb700;
-    box-shadow: -8px 10px black;
+    background-color: #ffffff;
+    box-shadow: -8px 10px rgb(230, 230, 230);
 }
 .list-anggota-desk{
     padding: 1rem;
@@ -615,7 +615,7 @@ div.more-info a:hover::after{
 }
 #ks-tittle{
     grid-area: ks-tittle;
-    background-color: #ffb700;
+    background-color: #ffffff;
 }
 #nomer-ksp{
     background-color: #f72585;
