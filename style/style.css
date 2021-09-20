@@ -10,6 +10,10 @@
     font-family: 'Poppins-ExtraBold';
     src: url(../resources/fonts/Poppins-ExtraBold.ttf);
 }
+@font-face {
+    font-family: 'Ultra-Regular';
+    src: url(../resources/fonts/Ultra-Regular.ttf);
+}
 *{
     box-sizing: border-box;
     padding: 0;
@@ -273,7 +277,7 @@ main{
     cursor: pointer;
 }
 #beranda-description div p{
-    background-color: orange;
+    background-color: #ffb700;
     width: 100%;
     padding: 1rem;
     text-align: center;
@@ -372,7 +376,7 @@ main{
     max-width: 1300px;
     width: 100%;
     min-height:700px;
-    background-color: rgb(255, 166, 0);
+    background-color: #ffb700;
 }
 #pengumuman h2,
 #tentang h2{
@@ -452,7 +456,7 @@ div.more-info a::after{
     left: 0;
     position: absolute;
     height: 100%;
-    background-color: orange;
+    background-color: #ffb700;
     transition: .5s ease;
 }
 div.more-info a:hover::after{
@@ -462,7 +466,7 @@ div.more-info a:hover::after{
 
 /* TENTANG */
 #tentang{
-    background-color: orange;
+    background-color: #ffb700;
     display: flex;
     flex-direction: column;
     max-width: 1300px;
@@ -522,7 +526,7 @@ div.more-info a:hover::after{
     width: 25%;
     min-height: 10rem;
     margin: 1rem;
-    background-color: orange;
+    background-color: #ffb700;
     box-shadow: -8px 10px black;
 }
 .list-anggota-desk{
@@ -560,6 +564,194 @@ div.more-info a:hover::after{
         flex-wrap: wrap;
     }
 }
+
+/* KELOMPOK STUDI */
+#kelompok-studi{
+    margin-top: 5rem;
+    display: grid;
+    width: 100%;
+    max-width: 1300px;
+    min-height: 1200px;
+    background-color: rgb(255, 157, 0);
+    color: white;
+    grid-template-columns: repeat(5,1fr);
+    grid-template-rows: 100px repeat(3,1fr);
+    grid-template-areas: "ks-tittle ks-tittle ks-tittle ks-tittle ks-tittle"
+                         "nomer-ksp deskripsi-ksp deskripsi-ksp deskripsi-ksp medsos-ksp"
+                         "deskripsi-ksdg deskripsi-ksdg deskripsi-ksdg medsos-ksdg nomer-ksdg"
+                         "nomer-ksl deskripsi-ksl deskripsi-ksl deskripsi-ksl medsos-ksl"   
+    ;
+}
+.ks{
+    color: black;
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+}
+.ks-nomer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(5, 16, 34);
+}
+.ks-nomer h1{
+    font-size: 10rem;
+    letter-spacing: 3px;
+    color: rgba(255, 255, 255, 0.274);
+}
+.ks-dsk{
+    max-height: 100%;
+    max-width: 100%;
+    overflow: hidden;
+    position: relative;
+    background-color: rgb(255, 255, 255);
+}
+.ks-medsos{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: rgba(255, 0, 136, 0.76);
+}
+#ks-tittle{
+    grid-area: ks-tittle;
+    background-color: #ffb700;
+}
+#nomer-ksp{
+    background-color: #f72585;
+    grid-area: nomer-ksp;
+}
+#deskripsi-ksp{
+    grid-area: deskripsi-ksp;
+    background-color: #b5179e;
+}
+#medsos-ksp{
+    grid-area: medsos-ksp;
+    background-color: #7209b7;
+}
+
+#nomer-ksdg{
+    grid-area: nomer-ksdg;
+    background-color: #560bad;
+}
+#deskripsi-ksdg{
+    background-color: #480ca8;
+    grid-area: deskripsi-ksdg;
+}
+#medsos-ksdg{
+    position: relative;
+    grid-area: medsos-ksdg;
+    background-color: #3a0ca3;
+}
+#nomer-ksl{
+    background-color: #3f37c9;
+    grid-area: nomer-ksl;
+}
+#deskripsi-ksl{
+    background-color: #4361ee;
+    grid-area: deskripsi-ksl;
+}
+#medsos-ksl{
+    background-color: #4895ef;
+    grid-area: medsos-ksl;
+}
+.ks-dsk h2,
+.ks-dsk p{
+    padding: .5rem 1rem;
+}
+.ks-dsk h2{
+    padding-top: 1.5rem;
+    font-size: 1.8rem;
+    font-family: 'Poppins-ExtraBold';
+}
+.ks-dsk p{
+    max-width: 75%;
+}
+#deskripsi-ksp p::after{
+    content: 'KSP';
+    position: absolute;
+    font-size: 17rem;
+    bottom: -35%;
+    right: -12%;
+    font-family: 'Ultra-Regular';
+    color: rgba(255, 255, 255, 0.418);
+}
+#deskripsi-ksdg p::after{
+    content: 'KSDG';
+    position: absolute;
+    font-size: 12rem;
+    bottom: -25%;
+    right: -10%;
+    font-family: 'Ultra-Regular';
+    color: rgba(255, 255, 255, 0.281);
+}
+#deskripsi-ksl p::after{
+    content: 'KSL';
+    position: absolute;
+    font-size: 15rem;
+    bottom: -30%;
+    right: -5%;
+    font-family: 'Ultra-Regular';
+    color: rgba(255, 255, 255, 0.281);
+}
+.ks-medsos a{
+    text-decoration: none;
+    color: white;
+    font-size: 2rem;
+    margin: .5rem;
+}
+.ks-medsos .fa-line{
+    color: rgb(255, 255, 255);
+}
+.mobile-socmed{
+    display: none;
+    padding: .5rem 1rem;
+}
+.mobile-socmed a{
+    text-decoration: none;
+    color: white;
+    margin: 0 .5rem;
+    font-size: 2rem;
+}
+@media only screen and (max-width: 720px){
+    .ks-medsos{
+        display: none;
+    }
+    #kelompok-studi{
+        grid-template-areas: "ks-tittle ks-tittle ks-tittle ks-tittle ks-tittle"
+                             "nomer-ksp deskripsi-ksp deskripsi-ksp deskripsi-ksp deskripsi-ksp"
+                             "deskripsi-ksdg deskripsi-ksdg deskripsi-ksdg deskripsi-ksdg nomer-ksdg"
+                             "nomer-ksl deskripsi-ksl deskripsi-ksl deskripsi-ksl deskripsi-ksl"   
+        ;
+    }
+    #deskripsi-ksp p::after{
+        font-size: 6rem;
+        bottom: -10%;
+        right: -8%;
+    }
+    #deskripsi-ksdg p::after{
+        font-size: 5rem;
+        bottom: -8%;
+        right: -10%;
+    }
+    #deskripsi-ksl p::after{
+        font-size: 5rem;
+        bottom: -7%;
+        right: -5%;
+    }
+    .ks-dsk p{
+        max-width: 100%;
+    }
+    .ks-dsk h2{
+        padding-top: 1.5rem;
+        font-size: 1.4rem;
+        font-family: 'Poppins-ExtraBold';
+    }
+    .mobile-socmed{
+        display: flex;
+    }
+}
+/* FOOTER */
 footer{
     height: 100vh;
     width: 100%;
