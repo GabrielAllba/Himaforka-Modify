@@ -40,7 +40,7 @@ header{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    background-color: rgb(29, 46, 94);
+    background-color: rgb(21, 53, 105);
     width: 100%;
     max-width: 1300px;
     min-height: 3rem;
@@ -91,7 +91,7 @@ nav{
     width: 100%;
     max-width: 1300px;
     height: 4rem;
-    background-color: rgb(0, 34, 88);
+    background-color: rgb(21, 53, 105);
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -249,7 +249,19 @@ main{
     width: 100%;
     min-height:450px;
     flex-wrap: wrap;
-    background-color: rgb(255, 255, 255);
+    background-image: url(../resources/img/bg.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+@media only screen and (max-width: 720px) {
+    #beranda{
+        background-image: none;
+        background-color: rgb(255, 255, 255);
+    }
+    #beranda-description{
+        background-color: rgb(21, 53, 105);
+    }
 }
 .content-beranda{
     width: 50%;
@@ -258,7 +270,6 @@ main{
     flex-wrap: wrap;
 }
 #beranda-description{
-    background-color: rgb(21, 53, 105);
     padding: 1rem;
 }
 #beranda-description h1{
