@@ -753,6 +753,121 @@ div.more-info a:hover::after{
 }
 /* FOOTER */
 footer{
-    height: 100vh;
+    display: flex;
+    min-height: 200px;
     width: 100%;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1300px;
+    background-color: rgb(0, 34, 88);
+}
+footer > p{
+    color: white;
+    letter-spacing: 5px;
+    padding: 0 1rem;
+    text-align: center;
+}
+.footer-socmed{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.footer-socmed a{
+    color: rgb(61, 60, 60);
+    display: inline-flex;
+    align-items: center;
+    text-decoration: none;
+    margin: 10px;
+    padding: 20px;
+    width: 3rem;
+    justify-content: center;
+    background-color: white;
+    overflow: hidden;
+    transition: .4s;
+    overflow: hidden;
+    border-radius: 60px;
+    max-height: 2rem;
+}
+
+footer .footer-socmed a i{
+    font-size: 1.2rem;
+}
+footer .footer-socmed a[href*="line"]:hover{
+    background-color: rgb(66, 194, 43);
+    transition: .4s;
+    color: white;
+}
+footer .footer-socmed a[href*="instagram"]:hover{
+    background-color: rgb(255, 0, 98);
+    transition: .4s;
+    color: white;
+}
+footer .footer-socmed a[href*="facebook"]:hover{
+    background-color: rgb(46, 110, 212);
+    transition: .4s;
+    color: white;
+}
+footer .footer-socmed a[href*="twitter"]:hover{
+    background-color: rgb(65, 178, 243);
+    transition: .4s;
+    color: white;
+}
+footer .footer-socmed a[href*="youtube"]:hover{
+    background-color: rgb(255, 0, 0);
+    transition: .4s;
+    color: white;
+}
+footer .footer-socmed a[href*="linked"]:hover{
+    background-color: rgb(9, 55, 155);
+    transition: .4s;
+    color: white;
+}
+footer .footer-socmed a[href*="linktr"]:hover{
+    background-color: rgb(17, 230, 148);
+    transition: .4s;
+    color: white;
+}
+
+.footer-nav{
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-nav a{
+    color: white;
+    text-decoration: none;
+    margin: .5rem 1rem;
+}
+@media only screen and (max-width: 720px) {
+    footer{
+        min-height: 300px;
+    }
+    footer .footer-socmed a[href*="line"]{
+        background-color: rgb(66, 194, 43);
+        color: white;
+    }
+    footer .footer-socmed a[href*="instagram"]{
+        background-color: rgb(255, 0, 128);
+        color: white;
+    }
+    footer .footer-socmed a[href*="facebook"]{
+        background-color: rgb(46, 110, 212);
+        color: white;
+    }
+    footer .footer-socmed a[href*="twitter"]{
+        background-color: rgb(65, 178, 243);
+        color: white;
+    }
+    footer .footer-socmed a[href*="youtube"]{
+        background-color: rgb(255, 0, 0);
+        color: white;
+    }
+    footer .footer-socmed a[href*="linked"]{
+        background-color: rgb(9, 55, 155);
+        color: white;
+    }
+    footer .footer-socmed a[href*="linktr"]{
+        background-color: rgb(17, 230, 148);
+        color: white;
+    }
 }
