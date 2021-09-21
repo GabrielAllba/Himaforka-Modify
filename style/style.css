@@ -192,7 +192,7 @@ form .fa-search {
     color: white;
     background-color: rgb(214, 214, 214);
 }
-@media only screen and (max-width: 720px){
+@media only screen and (max-width:768px){
     nav{
         justify-content: flex-start;
         align-items: center;
@@ -256,7 +256,7 @@ main{
     background-position: center;
     background-repeat: no-repeat;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     #beranda{
         background-image: none;
         background-color: rgb(255, 255, 255);
@@ -322,7 +322,7 @@ main{
     align-items: center;
     justify-content: center;
 }
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 768px){
     #beranda{
         flex-direction: column;
     }
@@ -497,7 +497,7 @@ div.more-info a:hover::after{
     height: 100%;
     flex-wrap: wrap;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .tentang-main{
         flex-direction: column;
     }
@@ -564,7 +564,7 @@ div.more-info a:hover::after{
     cursor: pointer;
 }
 
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     .tentang-main{
         flex-direction: column;
     }
@@ -732,7 +732,7 @@ div.more-info a:hover::after{
     margin: 0 .5rem;
     font-size: 2rem;
 }
-@media only screen and (max-width: 720px){
+@media only screen and (max-width: 768px){
     .ks-medsos{
         display: none;
     }
@@ -857,7 +857,7 @@ footer .footer-socmed a[href*="linktr"]:hover{
     text-decoration: none;
     margin: .5rem 1rem;
 }
-@media only screen and (max-width: 720px) {
+@media only screen and (max-width: 768px) {
     footer{
         min-height: 300px;
     }
