@@ -853,9 +853,14 @@ footer .footer-socmed a[href*="linktr"]:hover{
     flex-wrap: wrap;
 }
 .footer-nav a{
-    color: white;
+    color: rgb(199, 199, 199);
     text-decoration: none;
     margin: .5rem 1rem;
+    transition: .4s;
+}
+.footer-nav a:hover{
+    transition: .4s;
+    color: white;
 }
 @media only screen and (max-width: 768px) {
     footer{
