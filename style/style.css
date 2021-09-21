@@ -920,3 +920,38 @@ footer .footer-socmed a[href*="linktr"]:hover{
         padding: 1rem;
     }
 }
+@media only screen and (max-width: 350px){
+    h2{
+        font-size: 1.4rem;
+    }
+    .ks-nomer{
+        display: none;
+    }
+    #kelompok-studi{
+        grid-template-areas: "ks-tittle ks-tittle ks-tittle ks-tittle ks-tittle"
+                             "deskripsi-ksp deskripsi-ksp deskripsi-ksp deskripsi-ksp deskripsi-ksp"
+                             "deskripsi-ksdg deskripsi-ksdg deskripsi-ksdg deskripsi-ksdg deskripsi-ksdg"
+                             "deskripsi-ksl deskripsi-ksl deskripsi-ksl deskripsi-ksl deskripsi-ksl"   
+        ;
+    }
+    .mobile-socmed{
+        justify-content: center;
+    }
+    .ann-img-container{
+        width: 100%;
+        max-height: 25rem;
+        overflow: hidden;
+        display: flex;
+        justify-content: center;
+    }
+    .ann-img-container img{
+        width: 70%;
+        height: 100%;
+    }
+    .ks-dsk p{
+        padding: 2rem;
+    }
+    div.footer-nav{
+        justify-content: center;
+    }
+}
