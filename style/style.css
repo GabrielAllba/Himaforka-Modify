@@ -689,9 +689,9 @@ div.more-info a:hover::after{
 #deskripsi-ksp p::after{
     content: 'KSP';
     position: absolute;
-    font-size: 17rem;
-    bottom: -35%;
-    right: -12%;
+    font-size: 15rem;
+    bottom: -15%;
+    right: 1%;
     font-family: 'Ultra-Regular';
     color: rgba(255, 255, 255, 0.418);
 }
@@ -699,8 +699,8 @@ div.more-info a:hover::after{
     content: 'KSDG';
     position: absolute;
     font-size: 12rem;
-    bottom: -25%;
-    right: -10%;
+    bottom: -12%;
+    right: -1%;
     font-family: 'Ultra-Regular';
     color: rgba(255, 255, 255, 0.281);
 }
@@ -708,7 +708,7 @@ div.more-info a:hover::after{
     content: 'KSL';
     position: absolute;
     font-size: 15rem;
-    bottom: -30%;
+    bottom: -15%;
     right: -5%;
     font-family: 'Ultra-Regular';
     color: rgba(255, 255, 255, 0.281);
@@ -745,18 +745,18 @@ div.more-info a:hover::after{
     }
     #deskripsi-ksp p::after{
         font-size: 6rem;
-        bottom: -10%;
-        right: -8%;
+        bottom: -5%;
+        right: 10%;
     }
     #deskripsi-ksdg p::after{
         font-size: 5rem;
-        bottom: -8%;
-        right: -10%;
+        bottom: -3%;
+        right: 10%;
     }
     #deskripsi-ksl p::after{
         font-size: 5rem;
-        bottom: -7%;
-        right: -5%;
+        bottom: -3%;
+        right: 17%;
     }
     .ks-dsk p{
         max-width: 100%;
