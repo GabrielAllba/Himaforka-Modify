@@ -577,7 +577,7 @@ div.more-info a:hover::after{
     text-align: center;
     }
     .list-anggota{
-        width: 60%;
+        width: 40%;
     }
     #tentang-agt{
         flex-wrap: wrap;
